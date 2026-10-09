@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050814"/>
+      <stop offset="50%" stop-color="#0a122c"/>
+      <stop offset="100%" stop-color="#02040a"/>
+    </linearGradient>
+    <linearGradient id="cyanPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="neon" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="108" fill="url(#bgGrad)"/>
+  <circle cx="256" cy="256" r="180" fill="url(#glow)"/>
+
+  <!-- Orbital Rings -->
+  <ellipse cx="256" cy="256" rx="200" ry="70" fill="none" stroke="#38bdf8" stroke-width="3" stroke-opacity="0.4" transform="rotate(-25 256 256)"/>
+  <ellipse cx="256" cy="256" rx="160" ry="50" fill="none" stroke="#c084fc" stroke-width="2.5" stroke-opacity="0.5" transform="rotate(35 256 256)"/>
+
+  <!-- ALLPHA Symbol: Futuristic stylized A with crystalline apex -->
+  <g filter="url(#neon)">
+    <!-- Outer Triangle Apex -->
+    <path d="M 256 95 L 370 375 L 320 375 L 256 215 L 192 375 L 142 375 Z" fill="url(#cyanPurple)"/>
+    <!-- Floating Crystal Core -->
+    <polygon points="256,150 290,260 256,310 222,260" fill="#ffffff" fill-opacity="0.9"/>
+    <!-- Cross Beam Ring -->
+    <rect x="180" y="295" width="152" height="10" rx="5" fill="#38bdf8"/>
+    <!-- Sparkle Nodes -->
+    <circle cx="256" cy="95" r="7" fill="#ffffff"/>
+    <circle cx="142" cy="375" r="5" fill="#38bdf8"/>
+    <circle cx="370" cy="375" r="5" fill="#c084fc"/>
+  </g>
+</svg>

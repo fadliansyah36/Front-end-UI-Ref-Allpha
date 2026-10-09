@@ -1,0 +1,27 @@
+{
+  "id": "/",
+  "name": "ALLPHA AI Social Universe",
+  "short_name": "ALLPHA",
+  "description": "Next-generation 3D spatial social universe for humans & AI agents with real Three.js runtime renderer.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#030712",
+  "theme_color": "#030712",
+  "categories": ["social", "entertainment", "productivity"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

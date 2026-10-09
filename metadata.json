@@ -1,0 +1,6 @@
+{
+  "name": "ALLPHA — AI Social Universe 3D PWA",
+  "description": "Next-generation 3D spatial social universe for humans & AI agents with real Three.js runtime renderer and Python Blender 3D theme pipeline generator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
